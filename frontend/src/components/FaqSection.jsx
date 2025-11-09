@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
+import { Link } from "react-router-dom";
 import arrowCirrly from '../assets/shape-1.webp'
 import { motion } from 'framer-motion';
 function FaqSection() {
@@ -68,9 +69,9 @@ function FaqSection() {
     // className="hidden sm:inline w-6 h-6 sm:w-8 sm:h-8 md:w-30 md:h-30 object-contain"
     className='hidden lg:inline w-6 h-6 sm:w-8 sm:h-8 md:w-35 md:h-30 object-contain'
   />
-  <button className="bg-lime-400 hover:bg-lime-500 transition text-black font-semibold py-3 px-6 rounded-full shadow-md">
+  <Link to="/contact" className="bg-lime-400 hover:bg-lime-500 transition text-black font-semibold py-3 px-6 rounded-full shadow-md">
     Contact Us
-  </button>
+  </Link>
 </div>
 </div>
 

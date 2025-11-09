@@ -265,8 +265,8 @@ function ContectSection() {
                 <Mail className="w-6 h-6" />
               </div>
               <div>
-                <p className="text-gray-800 font-medium">support@gmail.com</p>
-                <p className="text-gray-600">www.sayan.net</p>
+                <p className="text-gray-800 font-medium">fushiontech91@gmail.com</p>
+                {/* <p className="text-gray-600">www.sayan.net</p> */}
               </div>
             </div>
 
@@ -275,8 +275,8 @@ function ContectSection() {
                 <Phone className="w-6 h-6" />
               </div>
               <div>
-                <p className="text-gray-800 font-medium">+880 (123) 456 88</p>
-                <p className="text-gray-600">+001 (234) 56897</p>
+                <p className="text-gray-800 font-medium">+91 9404900388</p>
+                <p className="text-gray-600">+91 73875 48083</p>
               </div>
             </div>
 
@@ -296,7 +296,7 @@ function ContectSection() {
         <div className="bg-gray-50 p-8 rounded-2xl shadow-md relative">
           <h3 className="text-2xl font-bold text-gray-900 mb-2">Get In Touch</h3>
           <p className="text-gray-600 mb-8">
-            Contact us today to schedule consultation with our expert team
+            Contact us today to schedule consultation with Us
           </p>
 
           <form className="space-y-6" onSubmit={handleSubmit}>

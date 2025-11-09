@@ -6,7 +6,7 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-    origin: "*" // allow all origins, or replace "*" with your frontend URL like "http://localhost:3000"
+    origin: "https://fushiontech-mii3.onrender.com" // allow all origins, or replace "*" with your frontend URL like "http://localhost:3000"
 }));
 
 // Body parsers

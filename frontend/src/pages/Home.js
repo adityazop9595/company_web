@@ -36,7 +36,7 @@ const Home = () => {
           <p className="uppercase text-sm font-semibold text-purple-700 tracking-widest">
             Optimize your marketing
           </p>
-          <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 ">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             {/* Make The Most Of Your{" "} */}
             Create your Amazing Website
             <span className="text-purple-700"> </span> 

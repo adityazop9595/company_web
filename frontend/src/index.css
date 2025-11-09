@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,300;0,600;0,700;0,800;0,900;1,300;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+*{
+  /* font-family: 'Poppins',sans-serif; */
+ 
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar but keep scrolling */
+
+@theme{
+    /*  */
+  /* --breakpoint-xl-1500:1500px; */
+  --font-Poppins:'Poppins','sans-serif';
+  --font-DM-sans:"DM Sans", sans-serif;
+  --font-Alfa-Slab-One:'Alfa Slab One','sans-serif'
+}
+
+
+@layer components{
+  .max-w-size {
+    @apply max-w-[1400px] mx-auto;
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  min-width: 200%;
+  animation: marquee 20s linear infinite;
+}
+
+
+
+/* Custom animations & shapes */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 5s ease-in-out infinite;
+}
+
+/* Custom triangle shape */
+.clip-triangle {
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}

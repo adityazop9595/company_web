@@ -134,13 +134,13 @@ const Navbar = () => {
             <ul className="flex flex-col gap-3 p-4 text-gray-800 font-medium">
               {navLinks.map((nav, index) => (
                 <li key={index}>
-                  <a
-                    href={nav.link}
+                  <Link
+                    to={nav.link}
                     onClick={() => setOpen(false)}
                     className="block hover:text-indigo-600 transition-colors"
                   >
                     {nav.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li>

@@ -144,9 +144,9 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <button className="w-full mt-2 px-6 py-2 rounded-full bg-lime-400 font-semibold hover:bg-lime-300 transition-all">
+                <Link to="/book-appointment" className="w-full mt-2 px-6 py-2 rounded-full bg-lime-400 font-semibold hover:bg-lime-300 transition-all">
                   Start Project
-                </button>
+                </Link>
               </li>
             </ul>
           </div>

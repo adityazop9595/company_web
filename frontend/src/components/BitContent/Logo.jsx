@@ -1,8 +1,9 @@
 import React from 'react'
 import logo from '../../assets/logo.png'; 
-
+import { Link } from "react-router-dom";
 function Logo() {
   return (
+    <Link to="/">
             <div className="flex items-center gap-2">
   {/* Logo Image */}
   <img
@@ -16,6 +17,7 @@ function Logo() {
     <p className="text-sm md:text-base  font-Poppins font-bold -mt-1">Tech.</p>
   </div>
 </div>
+    </Link>
   )
 }
 

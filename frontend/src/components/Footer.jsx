@@ -74,7 +74,7 @@ const Footer = () => {
       {/* === BOTTOM COPYRIGHT BAR === */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 border-t border-indigo-600 pt-6 flex flex-col md:flex-row justify-between items-start md:items-center text-sm text-indigo-200 gap-3">
         <p>
-          © {new Date().getFullYear()} Lunax Marketing. All Rights Reserved.
+          {/* © {new Date().getFullYear()} Lunax Marketing. All Rights Reserved. */}
         </p>
         <div className="flex flex-wrap space-x-6">
           <a href="#" className="hover:text-lime-400 transition">

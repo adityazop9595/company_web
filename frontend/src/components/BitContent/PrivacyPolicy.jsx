@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
           </p>
 
           <p className="leading-relaxed text-sm sm:text-base">
-            We collect only the minimum personal information necessary to perform the service (name, email, billing details, and any website content you supply). We securely store credentials and backups for the duration needed to support your site and will delete them on request after a reasonable retention period, unless legally required to keep them. If you have questions about data handling, refunds, scope changes, or would like custom contract terms (NDAs, IP assignments), please contact us at <a href="mailto:hello@example.com" className="underline text-blue-600">hello@example.com</a>. Your continued use of our services constitutes acceptance of this policy.
+            We collect only the minimum personal information necessary to perform the service (name, email, billing details, and any website content you supply). We securely store credentials and backups for the duration needed to support your site and will delete them on request after a reasonable retention period, unless legally required to keep them. If you have questions about data handling, refunds, scope changes, or would like custom contract terms (NDAs, IP assignments), please contact us at <a href="fushiontech91@example.com" className="underline text-blue-600">fushiontech91@example.com</a>. Your continued use of our services constitutes acceptance of this policy.
           </p>
 
           <div className="mt-6 text-xs text-gray-500 text-center">

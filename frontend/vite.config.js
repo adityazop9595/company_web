@@ -44,4 +44,5 @@ export default defineConfig({
       },
     },
   },
+    assetsInclude: ["_redirects"],
 })

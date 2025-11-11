@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import web from "../assets/icon-service-02-300x293.png";
 import keyword from "../assets/icon-service-01-300x300.png";
 import { PoPAnimation, BottomToTopAnimation } from "../features/utiles/animation/MultiAnimation";
+import WhatsappButton from "./BitContent/whatsappButton";
 
 // 🔹 Single Card Component
-const ServiceCard = ({ icon, title, description }) => {
+const ServiceCard = ({ icon, title, description , index}) => {
+     const [activeIndex, setActiveIndex] = useState(null);
+       const handleClick = () => {
+    setActive(!active);
+  };
   return (
-    <div
+    <div onClick={handleClick}
       className="group relative flex flex-col items-start justify-between rounded-lg border border-gray-200 bg-white 
       p-6 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl overflow-hidden"
     >
@@ -33,6 +38,15 @@ const ServiceCard = ({ icon, title, description }) => {
         <p className="mt-2 text-sm text-gray-600 group-hover:text-gray-100 transition-colors duration-300 leading-relaxed">
           {description}
         </p>
+                <div
+              className={`mt-3 transition-all duration-300 ${
+                activeIndex === index ? "block" : "hidden"
+              } lg:group-hover:block`} 
+              // 👆 Only enable hover behavior on large screens (lg)
+            >
+              <WhatsappButton data={title} />
+            </div>
+        
       </div>
     </div>
   );
@@ -74,6 +88,7 @@ const serviceData = [
 
 // 🔹 Main Section Component
 const ServiceSection = () => {
+
   return (
     <section
       className="bg-white py-16 px-4 sm:px-6 lg:px-8"
@@ -108,6 +123,7 @@ const ServiceSection = () => {
                 icon={service.icon}
                 title={service.title}
                 description={service.description}
+                index={index}
               />
             ))}
           </div>
